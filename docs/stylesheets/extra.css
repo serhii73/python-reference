@@ -12,9 +12,9 @@ label.md-nav__title.md-nav__title--site {
 }
 
 
-/* nav.md-nav.md-nav--primary > ul.md-nav__list > :first-child { */
-/*   display: none !important; */
-/* } */
+nav.md-nav.md-nav--primary > ul.md-nav__list > :first-child {
+  display: none !important;
+}
 
 /* .js .md-nav__item--nested>.md-nav__link:after { */
 /*   content: ""; */
@@ -41,3 +41,60 @@ label.md-nav__title.md-nav__title--site {
 .md-main__inner {
   padding-bottom: 2rem !important;
 }
+
+.admonition.output {
+  border-left: none;
+  box-shadow: none;
+  padding: 0;
+  border: 1px solid #c5c5c5;
+}
+
+.admonition.output p {
+  font-size: 1rem;
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 0.75rem;
+}
+
+.admonition.output::before {
+     position: absolute;
+     top: 0;
+     right: 0;
+     height: 30px;
+     content: "OUTPUT";
+     font-size: small;
+     font-family: sans-serif;
+     letter-spacing: 1px;
+     padding: 3px 5px 0 8px;
+     color: grey;
+ }
+
+pre {
+  font-size: 16px !important;
+}
+
+article h1 {
+  color: inherit !important;
+  font-weight: bolder !important;
+}
+
+article h2 {
+  border-top: 1px solid whitesmoke;
+  font-weight: normal !important;
+  padding-top: 2rem;
+}
+
+article a {
+  color: blue !important;
+  text-decoration: underline;
+}
+
+pre, code {
+  font-family: monospace;
+  font-size: 1rem !important;
+}
+
+/* body { */
+/*   font-family: Verdana; */
+/* } */

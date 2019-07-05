@@ -3,12 +3,11 @@ site_name: Python Reference
 theme:
   favicon: 'images/favicon.png'
   name: 'material'
-  font:
-    text: 'Verdana'
-    code: 'Consolas'
+
+  font: false
 
   palette:
-    primary: 'deep purple'
+    primary: 'brown'
     accent: 'purple'
 
 extra_css:
