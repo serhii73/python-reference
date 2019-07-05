@@ -4,8 +4,6 @@
 
 Programmers often put important remarks, explanations or TODOs for themselves or their teammates.
 
-## Creating a comment
-
 Comments start with `#`. Everything from `#` until the end of the line is ignored by Python.
 
 ```python

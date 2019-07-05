@@ -28,7 +28,7 @@ print(a)
     Three
     GO!
 
-Backslash symbol `\` is used to include quotation marks in the string. This is called *escaping*, because the symbol escapes the regular treatment and plays another role.
+Backslash symbol `\` is used to include quotation marks in the string. This is called *escaping*.
 
 ```python
 line = "She said \"Hi\" to me"

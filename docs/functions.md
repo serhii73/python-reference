@@ -1,6 +1,9 @@
 # Functions
 
-**Function**: a block of code which is executed (called, launched) from another part of the program. It might produce (return) a result.
+**Function**: a block of code which is executed (called, launched) from another part of the program.
+
+- It might accept information ([arguments](#arguments)) at the time of the call.
+- It might produce ([return](#return)) a result.
 
 ## Calling a function
 
@@ -32,21 +35,7 @@ print(pow(3,2))
 
 ## Creating a function
 
-Functions are created (defined) with a `def` keyword, followed by the name, parameters in parentheses and function body.
-
-### Parameters
-
-**Parameters** specify the number and the order of possible arguments. They are a part of the definition
-
-The number of parameters in the definition should match the number of arguments in the call, unless there are [default paramters](#default-parameters). There could be zero parameters.
-
-### Return
-
-`return` keyword specifies the result to be produced by a function. The usefulness of functions comes from the results they produce and return.
-
-### Simple useful example
-
-Here `circle_area` function is defined, which:
+Here `circle_area` function is created (defined). It:
 
 - accepts one parameter `r`
 - calculates the area of a circle of radius `r`
@@ -59,22 +48,21 @@ def circle_area(r):
   return area
 ```
 
-Then we can call `circle_area`, pass it one [argument](#arguments) and save the result into a [variable](/variables):
+Here a call to `circle_area` is made, one [argument](#arguments) is passed and the result is saved into a [variable](/variables):
 
 ```python
 answer = circle_area(12)
 ```
 
-### Simple useless example
+### Parameters
 
-Here we define a function `answer`. It accepts no parameters and always returns `42`.
+**Parameters** specify the number and the order of possible arguments. They are a part of the definition
 
-```python
-def answer():
-  return 42
-```
+The number of parameters in the definition should match the number of arguments in the call, unless there are [default paramters](#default-parameters). There could be zero parameters.
 
-Once `answer` is defined, the corresponding call `answer()` and raw number `42` are indistinguishable for the Python interpreter, since both numbers and function calls are [expressions](/expression).
+### Return
+
+`return` keyword specifies the result to be produced by a function. The usefulness of functions comes from the results they return.
 
 ### Default parameters
 
@@ -93,3 +81,37 @@ print(greeting("Mike"))
     Hello John
     Hello friend
     Hello Mike
+
+## Examples of function definitions and calls
+
+### Example 1
+
+```python
+def calculate_full_cost(price, tax):
+  full_cost = price + (price * tax / 100)
+  return full_cost
+
+print("The total cost is:")
+print(calculate_full_cost(100, 13))
+```
+
+!!! output ""
+    The total cost is:
+    113.0
+
+### Example 2
+
+```python
+def generate_welcome(name = "friend"):
+  return "Welcome home, " + name
+
+welcome_1 = generate_welcome()
+welcome_2 = generate_welcome("Paul")
+
+print(welcome_1)
+print(welcome_2)
+```
+
+!!! output ""
+    Welcome home, friend
+    Welcome home, Paul
