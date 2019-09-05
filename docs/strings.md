@@ -109,8 +109,17 @@ word = line[16]
 print(word)
 ```
 
+Negative index can be used within a range.
+
+```python
+line = 'The Universe is awesome!'
+word = line[-3:]
+print(word)
+```
+
+
 !!! output ""
-    awesome!
+    me!
 
 
 ## Multiline string
