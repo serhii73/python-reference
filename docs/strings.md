@@ -105,7 +105,7 @@ Omitting the last index in the slice cuts until the end.
 
 ```python
 line = 'The Universe is awesome!'
-word = line[16]
+word = line[16:]
 print(word)
 ```
 
