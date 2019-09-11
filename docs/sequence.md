@@ -11,7 +11,7 @@ Most sequence types in Python support the following basic sequence operations:
 
 ## Access via index
 
-Indexes start with 0.
+Get element by its position (index). Indexes start with 0.
 
 ```python
 s[n] # access nth element of s
@@ -29,7 +29,7 @@ Examples:
 
 ## Length
 
-Length is another word for *size*.
+Length is another word for size. Lengths start with 1, unlike indexes.
 
 ```python
 len(s)  # length of s
@@ -64,8 +64,27 @@ min("azbc")  # 'a'
 max("azbc")  # 'z'
 ```
 
+## Count method
+
+Returns the total number of occurrences of an element in a sequence.
+
+```python
+s.count(x)  ## number of occurrences of x in s
+```
+
+Examples:
+
+```python
+"Freedom".count("e")  # 2
+"Freedom".count("r")  # 1
+
+[1, 1, 6, 8, 8, 8].count(1)  # 2
+[1, 1, 6, 8, 8, 8].count(8)  # 3
+```
 
 ## `in` and `not in`
+
+Determines if a sequence includes and element or doesn't include it.
 
 ```python
 x in s     # True if s contains x
@@ -85,6 +104,8 @@ word = "France"
 
 ## Concatenation
 
+Glues together two sequences.
+
 ```python
 x + y
 ```
@@ -103,13 +124,14 @@ c = a + b # [1, 2, 3, 3, 4, 5]
 
 ## Slicing
 
+Produces a subsequence.
+
 ```python
 s[a:b] # get subsequence of s from a to b
 s[:b]  # get subsequence of s from 0 to b
 s[a:]  # get subsequence of s from a to end
 s[:]   # get subsequence of s from 0 to end
        # (esssentially, full copy of s)
-
 ```
 
 Examples:
@@ -121,13 +143,14 @@ Examples:
 [0, 1, 2, 3, 4][1:3]   # [1, 2]
 [0, 1, 2, 3, 4][2:5]   # [2, 3, 4]
 
-
 "France"[:3]   # "Fra"
 "France"[2:]   # "ance"
 "France"[:]   # "France"
 ```
 
 ## Multiplication
+
+Produces a repeated sequence.
 
 ```python
 s * n  # make n copies of s
