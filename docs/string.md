@@ -1,4 +1,4 @@
-# Strings
+# String
 
 **String**: a [sequence](/sequence) of characters.
 

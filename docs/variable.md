@@ -1,4 +1,4 @@
-# Variables
+# Variable
 
 **Variable**: a label attached to a piece of data.
 
