@@ -1,6 +1,6 @@
 # Strings
 
-**String**: a [sequence](/sequences) of characters.
+**String**: a [sequence](/sequence) of characters.
 
 ## Creating a string
 

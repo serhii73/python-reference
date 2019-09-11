@@ -1,4 +1,4 @@
-# Functions
+# Function
 
 **Function**: a block of code which is executed (called, launched) from another part of the program.
 
