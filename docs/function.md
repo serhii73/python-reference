@@ -64,7 +64,7 @@ The number of parameters in the definition should match the number of arguments 
 
 `return` keyword specifies the result to be produced by a function. The usefulness of functions comes from the results they return.
 
-### Default parameters
+### Default values for parameters
 
 A function definition might include the predefined default value for a parameter. It is used only if the corresponding argument is not provided in the call.
 
