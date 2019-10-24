@@ -121,6 +121,44 @@ print(word)
 !!! output ""
     me!
 
+By default, slicing works character-wise. An optional third integer allows to change the step size. It's a somewhat tricky concept, it is easier to demonstrate it:
+
+
+```python
+line = '0123456789'
+
+# regular slice from 0 to 9
+line[0:10] # →◼ '0123456789'
+
+# step size = 1 specified
+# works same as [0:10], because step is 1 be default
+# slicing takes 1 char, then makes step 1
+# 0123456789
+# ↑↑↑↑↑↑↑↑↑↑
+line[0:10:1] # →◼ '0123456789'
+
+# step size = 2 specified
+# slicing takes 1 char, then makes step 2
+# 0123456789
+# ↑ ↑ ↑ ↑ ↑
+line[0:10:2] # →◼ '02468'
+
+# step size = 3 specified
+# slicing takes 1 char, then makes step 3
+# 0123456789
+# ↑  ↑  ↑  ↑
+line[0:10:3] # →◼ '0369'
+```
+
+Step can be negative. It forces slicing to go backwards:
+
+```python
+line = '0123456789'
+
+line[10:0:-1] # →◼ '987654321'
+line[10:0:-2] # →◼ '97531'
+line[10:0:-3] # →◼ '0369'
+```
 
 ## Multiline string
 
