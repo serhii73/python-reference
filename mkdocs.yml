@@ -3,12 +3,12 @@ site_name: Python Reference
 theme:
   favicon: 'images/favicon.png'
   name: 'material'
-
-  font: false
-
   palette:
     primary: 'brown'
     accent: 'purple'
+  font:
+    text: 'Verdana'
+    code: 'Consolas'
 
 extra_css:
   - 'stylesheets/extra.css'
@@ -32,6 +32,15 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/codexpanse'
+    - type: 'twitter'
+      link: 'https://twitter.com/codexpanse'
+    - type: 'youtube'
+      link: 'https://youtube.com/codexpanse'
 
 # nav:
 #   - variables.md
