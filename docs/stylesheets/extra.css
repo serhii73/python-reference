@@ -1,39 +1,59 @@
-/* nav.md-nav { */
-/*   overflow: visible !important; */
-/*   max-height: 100% !important; */
-/* } */
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"
+}
 
-/* .nav.md-nav.md-nav--secondary { */
-/*   display: none !important; */
-/* } */
-
+/* hide left navbar header */
 label.md-nav__title.md-nav__title--site {
   display: none;
 }
 
-
+/* do not show left navbar section headers */
 nav.md-nav.md-nav--primary > ul.md-nav__list > :first-child {
   display: none !important;
 }
 
-/* .js .md-nav__item--nested>.md-nav__link:after { */
-/*   content: ""; */
-/* } */
+.md-nav__link--active {
+  color: black !important;
+  font-weight: bold;
+}
 
-/* .md-nav__item { */
-/*   margin-bottom: 1rem; */
-/* } */
+/* links in article */
+article a {
+  color: blue !important;
+  text-decoration: underline;
+}
 
+article h1 {
+  color: inherit !important;
+  font-weight: bolder !important;
+}
 
-/* Do not show sidebar in article */
-/* .md-content { */
-/*   margin-right: 0; */
-/* } */
-/* div.md-sidebar.md-sidebar--secondary { */
-/*   display: none; */
-/* } */
+article h2 {
+  border-top: 1px solid whitesmoke;
+  font-weight: normal !important;
+  padding-top: 2rem;
+}
 
+pre, code {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+}
 
+.md-content h1, .md-content h2, .md-content h3, .md-content h4 {
+  font-weight: bold;
+}
+
+.md-content h1 {
+  color: black;
+}
+
+.md-footer-nav {
+  display: none;
+}
+
+/* =============================== */
+/* SPECIFIC STYLES FOR PY QUICKREF */
+
+/* border between sidebar and content */
 .md-sidebar {
   border-right: 1px solid whitesmoke;
 }
@@ -58,43 +78,14 @@ nav.md-nav.md-nav--primary > ul.md-nav__list > :first-child {
 }
 
 .admonition.output::before {
-     position: absolute;
-     top: 0;
-     right: 0;
-     height: 30px;
-     content: "OUTPUT";
-     font-size: small;
-     font-family: sans-serif;
-     letter-spacing: 1px;
-     padding: 3px 5px 0 8px;
-     color: grey;
- }
-
-pre {
-  font-size: 16px !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  content: "OUTPUT";
+  font-size: small;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  padding: 3px 5px 0 8px;
+  color: grey;
 }
-
-article h1 {
-  color: inherit !important;
-  font-weight: bolder !important;
-}
-
-article h2 {
-  border-top: 1px solid whitesmoke;
-  font-weight: normal !important;
-  padding-top: 2rem;
-}
-
-article a {
-  color: blue !important;
-  text-decoration: underline;
-}
-
-pre, code {
-  font-family: monospace;
-  font-size: 1rem !important;
-}
-
-/* body { */
-/*   font-family: Verdana; */
-/* } */
